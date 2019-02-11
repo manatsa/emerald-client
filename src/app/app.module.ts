@@ -12,6 +12,9 @@ import { LoginComponent } from './menu/login/login.component';
 import { LogoutComponent } from './menu/logout/logout.component';
 import { ChangePasswordComponent } from './menu/change-password/change-password.component';
 import { LockAccountComponent } from './menu/lock-account/lock-account.component';
+import { AppRoutingModule } from './app-routing.module';
+import { MyProfileComponent } from './my-profile/my-profile.component';
+
 
 @NgModule({
   declarations: [
@@ -20,14 +23,16 @@ import { LockAccountComponent } from './menu/lock-account/lock-account.component
     LoginComponent,
     LogoutComponent,
     ChangePasswordComponent,
-    LockAccountComponent
+    LockAccountComponent,
+    MyProfileComponent
   ],
   imports: [
     BrowserModule,
     CommonModule,
     BsDropdownModule.forRoot(),
     TooltipModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    AppRoutingModule
 
   ],
   exports: [BsDropdownModule, TooltipModule, ModalModule],

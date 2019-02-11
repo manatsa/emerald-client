@@ -144,11 +144,11 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="accountDropdownLink">
             <a class="dropdown-item" href="#" data-toggle="modal" data-target="#loginModal">Sign In</a>
-            <a class="dropdown-item" href="#">My Profile</a>
-            <a class="dropdown-item" href="#">Change Password</a>
-            <a class="dropdown-item" href="#">Lock Account</a>
+            <a class="dropdown-item" routerLink="/profile">My Profile</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#changePasswordModal">Change Password</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#lockAccountModal">Lock Account</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Logout</a>
+            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
           </div>
         </li>
       </ul>
@@ -156,6 +156,10 @@
     </div>
     </div>
   </nav>
-
+<router-outlet></router-outlet>
   <app-login></app-login>
   <app-logout></app-logout>
+  <app-change-password></app-change-password>
+  <app-lock-account></app-lock-account>
+
+
