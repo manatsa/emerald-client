@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+.text-bold{
+  font-weight: bold;
+}
+
+.space-top{
+  margin-top: 60px;
+}
+
+.text-bold-green{
+  font-weight: bold;
+  color: green;
+  text-decoration: underline;
+}
